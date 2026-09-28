@@ -1,0 +1,51 @@
+@use "../abstracts/mixins" as m;
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: var(--spacing-large);
+
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 var(--spacing-medium);
+
+    @include m.responsive-mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+section {
+    background-color: var(--color-surface);
+    padding: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+
+    @include m.card-style;
+}
+
+figure {
+    text-align: center;
+    margin: 0 0 var(--spacing-medium);
+
+    img {
+        display: block;
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: var(--border-radius);
+    }
+}
+
+figcaption {
+    color: var(--color-muted);
+    margin-top: var(--spacing-small);
+}
+
+aside {
+    background-color: var(--color-surface);
+    padding: var(--spacing-large);
+
+    @include m.card-style;
+
+    align-self: start;
+}

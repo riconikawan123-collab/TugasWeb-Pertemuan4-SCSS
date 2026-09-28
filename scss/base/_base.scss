@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+
+:root {
+    --color-primary: #{v.$color-primary};
+    --color-secondary: #{v.$color-secondary};
+    --color-background: #{v.$color-background};
+    --color-surface: #{v.$color-surface};
+    --color-text: #{v.$color-text};
+    --color-muted: #{v.$color-muted};
+    --color-border: #{v.$color-border};
+
+    --spacing-small: #{v.$spacing-small};
+    --spacing-medium: #{v.$spacing-medium};
+    --spacing-large: #{v.$spacing-large};
+
+    --border-radius: #{v.$border-radius};
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: v.$font-main;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}

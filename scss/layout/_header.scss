@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-large);
+    text-align: center;
+}

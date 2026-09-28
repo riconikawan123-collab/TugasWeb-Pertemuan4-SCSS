@@ -1,0 +1,59 @@
+@use "../abstracts/mixins" as m;
+
+form {
+    @include m.flex-column;
+    gap: var(--spacing-small);
+
+    p {
+        @include m.flex-column;
+        gap: 5px;
+    }
+
+    input,
+    textarea,
+    button {
+        font: inherit;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+
+        background-color: var(--color-surface);
+        color: var(--color-text);
+    }
+
+    input[type="color"] {
+        width: 70px;
+        height: 45px;
+        padding: 2px;
+        cursor: pointer;
+    }
+
+    input[type="range"] {
+        cursor: pointer;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        padding: 10px 20px;
+
+        background-color: var(--color-primary);
+        color: white;
+
+        border: none;
+        border-radius: 6px;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-secondary);
+        }
+    }
+}

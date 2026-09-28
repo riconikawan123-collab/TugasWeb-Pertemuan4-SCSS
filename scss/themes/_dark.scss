@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #4d8ac4;
+    --color-secondary: #6fa8dc;
+    --color-background: #121212;
+    --color-surface: #1e1e1e;
+    --color-text: #eeeeee;
+    --color-muted: #aaaaaa;
+    --color-border: #444444;
+}
+
+header,
+footer {
+    background-color: #0d1b2a;
+}
+
+nav {
+    background-color: var(--color-surface);
+}
+
+article {
+    background-color: #181818;
+}

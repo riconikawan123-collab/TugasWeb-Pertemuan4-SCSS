@@ -1,0 +1,21 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin card-style {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+@mixin responsive-mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@for $i from 1 through 3 {
+    .spacing-#{$i} {
+        margin: $i * 10px;
+    }
+}

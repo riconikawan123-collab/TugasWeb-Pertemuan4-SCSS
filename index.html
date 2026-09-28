@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rico</title>
+    <meta name="description" content="Portofolio Pribadi Rico Maulana Sumantri, Seorang Mahasiswa.">
+    <meta property="og:title" content="Portofolio Rico">
+    <meta property="og:description" content="Portofolio pribadi Rico.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>PORTOFOLIO RICO</h1>
+        <p>Halo! Selamat datang di Portofolio Saya</p>
+        <p>Mari mengenal tentang saya lebih banyak!</p>
+    </header>
+<nav>
+        <h2>MENU</h2>
+    <ul>
+        <li><a href="#Tentang_Saya">Perkenalkan!</a></li>
+        <li><a href="#Deskripsi">Kenalin Saya</a></li>
+        <li><a href="#Pendidikan">Pendidikan</a></li>
+        <li><a href="#Pengalaman">Pengalaman</a></li>
+        <li><a href="#Kontak">Kontak</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="Tentang-Saya">
+        <figure>
+            <img src="rico.jpeg" alt="Foto Rico" width="200">
+            <figcaption>Rico Maulana Sumantri</figcaption>
+        </figure>
+        <h2>Halloww Kenalin!</h2>
+        <p>Perkenalkan nama saya Rico Maulana Sumantri, Saya adalah seorang mahasiswa dari Universitas Negeri Medan. Saya mengambil program studi Ilmu Komputer karena hobi dan minat saya dibidang teknologi. Dengan bergabungnya saya di prodi ini saya harap bisa meningkatkan skill saya dalam bidang komputer.</p>
+    </section>
+    <section id="Deskripsi">
+       <h2>Deskripsi Diri</h2>
+        <p>Nama : Rico Maulana Sumantri</p>
+        <p>Umur : 18 Tahun</p>
+        <p>Tempat/Tanggal Lahir : Marihat Ulu,
+            <time datetime="2007-04-25">25 April 2007</time>
+        </p>
+        <p>Hobi : Bermain Game dan Menonton</p>
+    </section>
+    <section id="Pendidikan">
+        <h2>Pendidikan</h2>
+        <article>
+            <h3>SD Negeri 091250 Marihat ulu</h3>
+            <p>Tahun : <time datetime="2013">2013</time> -
+    <time datetime="2019">2019</time>
+
+            </p>
+        </article>
+        <article>
+            <h3>SMP Negeri 12 Pematang Siantar</h3>
+            <p>Tahun : <time datetime="2019">2019</time> - <time datetime="2022">2022</time>
+            </p>
+        </article>
+        <article> 
+            <h3>SMA Swasta Teladan</h3>
+            <p>Tahun : <time datetime="2022">2022</time> - <time datetime="2025">2025</time>
+            </p>
+        </article>
+        <article>
+            <h3>Universitas Negeri Medan</h3>
+            <p>Program Studi: Ilmu Komputer</p>
+            <p>Tahun Masuk: <time datetime="2025">2025</time> - <time datetime="2026">2026</time>
+            </p>
+        </article>
+    </section>
+    <section id="Pengalaman">
+        <h2>Pengalaman</h2>
+        <article>
+            <h3>Ketua Patroli Keamanan Sekolah</h3>
+            <p>Deskripsi: Memimpin patroli keamanan di SMA.</p>
+            <p>Tahun: <time datetime="2024">2024</time>
+            </p>
+        </article>
+    </section>
+    <aside>
+        <h2>There's problem? just call me!</h2>
+        <p>Email: riconikawan123@gmail.com</p>
+        <p>Telepon: 082277395980</p>
+        </aside>
+    <section id="Kontak">
+       <h2> Hubungi Saya</h2>
+        <form action="mailto:ricomaulanasumantri36@gmail.com" method="post" enctype="text/plain">
+            <p>
+    <label for="tanggal">Tanggal Menghubungi:</label>
+    <input type="date" id="tanggal" name="tanggal" required>
+            </p>
+
+             <p>
+    <label for="warna">Warna Favorit Kamu:</label>
+    <input type="color" id="warna" name="warna">
+            </p>
+
+            <p>
+    <label for="ketertarikan">Seberapa Tertarik dengan Portfolio Saya?</label>
+    <input
+        type="range"
+        id="ketertarikan"
+        name="ketertarikan"
+        min="1"
+        max="10"
+        value="5"
+    >
+            </p>
+            <p>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </p>
+            <p>
+                <label for="email">Email Kamu:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+            </p>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2026 Rico Maulana Sumantri. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
